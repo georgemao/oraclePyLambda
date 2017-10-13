@@ -19,9 +19,8 @@ def handler(event, context):
 
     print("This is a log message from Python 3.6!")
 
-    con = cx_Oracle.connect("admin", "adminadmin", "myoracletest.cvbjqjhsfcqp.us-west-2.rds.amazonaws.com/ORCL")
-    #dsnStr = cx_Oracle.makedsn("myoracletest.cvbjqjhsfcqp.us-west-2.rds.amazonaws.com", "1521", "ORCL")
-    #con = cx_Oracle.connect(user="admin", password="adminadmin", dsn=dsnStr)
+    con = cx_Oracle.connect(os.environ["user"], os.environ["password"], os.environ["endpoint"]+"/"+os.environ["my_db"])
+    
 
     print (con.version)
     #print(os.environ)
@@ -33,4 +32,4 @@ def handler(event, context):
         print(result)
     print()
 
-    return { "body" : "hellow from Python 3.6" }
+    return { "body" : "hello from Python 3.6" }
