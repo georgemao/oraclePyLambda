@@ -23,9 +23,6 @@ endpoint: somename.someuniquevalue.us-west-2.rds.amazonaws.com
 password: somepassword
 ```
 ```
-useIAM: 1 for IAM Auth, 0 for RDS auth
-```
-```
 my_db: DB name
 ```
 ```
@@ -36,4 +33,4 @@ VPC enable your Lambda function and attach it to the same subnet your RDS instan
 
 ## Resources
 
-- **myrdstest.py** - Python Based Lambda function that connects to RDS and performs a simple SELECT statement
+- **oracleTest.py** - Python Based Lambda function that connects to RDS Oracle and performs a simple SELECT statement
