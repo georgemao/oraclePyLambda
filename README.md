@@ -31,6 +31,24 @@ user: Rds username
 
 VPC enable your Lambda function and attach it to the same subnet your RDS instance is in.
 
+## Step 3 - Include Oracle dependencies
+
+Required Dependencies:
+	• Python cx_Oracle module (http://cx-oracle.readthedocs.io/en/latest/installation.html)
+	• Oracle Instant Client (https://oracle.github.io/odpi/doc/installation.html#linux)
+	• Libaio libraries
+
+Download the Linux installations for all dependencies, and use all 32bit or all 64bit.
+Place all dependencies in the /lib directory
+
+Install the cx_Oracle client:
+```
+python3  -m pip install cx_Oracle -t .
+```
+```
+python  -m pip install cx_Oracle -t .
+```
+
 ## Resources
 
 - **oracleTest.py** - Python Based Lambda function that connects to RDS Oracle and performs a simple SELECT statement
