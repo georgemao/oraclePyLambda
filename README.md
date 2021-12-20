@@ -34,9 +34,9 @@ VPC enable your Lambda function and attach it to the same subnet your RDS instan
 ## Step 3 - Include Oracle dependencies
 
 Required Dependencies:
-	• Python cx_Oracle module (http://cx-oracle.readthedocs.io/en/latest/installation.html)
-	• Oracle Instant Client (https://oracle.github.io/odpi/doc/installation.html#linux)
-	• Libaio libraries
+- Python cx_Oracle module (http://cx-oracle.readthedocs.io/en/latest/installation.html)
+- Oracle Instant Client (https://oracle.github.io/odpi/doc/installation.html#linux)
+- Libaio libraries
 
 Download the Linux installations for all dependencies, and use all 32bit or all 64bit.
 Place all dependencies in the /lib directory
